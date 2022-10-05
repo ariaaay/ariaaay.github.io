@@ -1,0 +1,4 @@
+# Similar to publications list; only accepts 'desc' and 'links'.
+- desc: 'Project'
+  # links:
+  #  - LINKNAME: 'LINK'

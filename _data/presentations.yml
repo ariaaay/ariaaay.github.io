@@ -1,0 +1,22 @@
+# Same format as described in _data/publications.yml
+- title: 'Learning Intermediate Features of Affordances with a Convolutional Neural Network'
+  # equal-authors: ['Aria Y. Wang']
+  other-authors: ['Aria Y. Wang', 'Michael J. Tarr']
+  status: 'Poster Presented at Annual Meeting of the Vision Science Society (VSS) 2018'
+
+- title: 'Learning Intermediate Features of Affordances with a Convolutional Neural Network'
+  # equal-authors: ['Aria Y. Wang']
+  other-authors: ['Aria Y. Wang', 'Michael J. Tarr']
+  status: 'Poster presented at Conference on Cognitive Computational Neuroscience (CCN) 2018'
+
+- title: 'Neural Taskonomy: Inferring the Similarity of Task-Derived Representations from Brain Activity'
+  # equal-authors: ['Aria Y. Wang']
+  other-authors: ['Aria Y. Wang', 'Leila Wehbe', 'Michael J. Tarr']
+  status: 'Poster presented at Algonauts Workshop at MIT'
+
+- title: 'Expanding Visual Feature Spaces towards a General Encoding Model of Scene Perception' 
+  other-authors: ['Aria Y. Wang', 'Michael J. Tarr', 'Leila Wehbe']
+  status: 'Poster presented at Society for Neuroscience (SfN) 2019'
+
+  # links:
+  #  - LINKNAME: 'LINK'
