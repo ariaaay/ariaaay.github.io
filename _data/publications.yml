@@ -7,11 +7,6 @@
   links:
     - paper: 'https://arxiv.org/pdf/2002.08975.pdf'
 
-# - title: 'Predicting Brain Responses for Low-Shot Learning'
-#   # equal-authors: [] 
-#   other-authors: ['Nadine Chang', '<u>Aria Y. Wang</u>', 'Michael J. Tarr', Martial Hebert]
-#   status: 'In Review.'
-
 
 - title: 'Neural Taskonomy: Inferring the Similarity of Task-Derived Representations from Brain Activity'
   # equal-authors: ['<strong>Aria Y. Wang</strong>'] 
@@ -33,17 +28,17 @@
 
 - title: 'Food for Thought: Selectivity for Food in Human Ventral Visual Cortex'
   other-authors: ['Nidhi Jain', '<u>Aria Y. Wang</u>', 'Margaret M Henderson', 'Ruogu Lin', 'Jacob S Prince', 'Michael J. Tarr', 'Leila Wehbe']
-  status: In Review
+  status: In Review.
   links:
    - paper: 'https://www.biorxiv.org/content/10.1101/2022.05.22.492983v2.full.pdf'
 
 
 - title: 'Incorporating Natural Language into Vision Models Improves Prediction and Understanding of Higher Visual Cortex'
   other-authors: ['<u>Aria Y. Wang</u>', 'Kendrick Kay', 'Thomas Naselaris', 'Michael J. Tarr', 'Leila Wehbe']
-  status: In Review
+  status: In Review.
   links:
    - paper: 'https://www.biorxiv.org/content/biorxiv/early/2022/09/29/2022.09.27.508760.full.pdf'
-   - poster at CCN 2022: 'pdf/CLIPPoster.pdf'
+   - poster: 'pdf/CLIPPoster.pdf'
    - talk: 'https://www.youtube.com/watch?v=CnFX0EzKbXU'
 
 
