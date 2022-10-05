@@ -14,7 +14,7 @@ nomath: true
 
 
 I am a joint PhD student in [Neural Computation](http://compneuro.cmu.edu/) and [Machine Learning](https://www.ml.cmu.edu/) at Carnegie Mellon University. I am advised by
-[Mike Tarr](https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/tarr-michael.html) and
+[Mike Tarr](https://sites.google.com/andrew.cmu.edu/tarrlab/) and
 [Leila Wehbe](https://www.cs.cmu.edu/~lwehbe/).
 
 I study visual and semantic processing in the human brain. In my work, I collect data using functional Magnetic Resonance Imaging (fMRI) and use models from computer vision and natural language processing to model brain responses of viewing natural images and movies. 
