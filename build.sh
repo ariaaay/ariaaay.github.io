@@ -1,1 +1,0 @@
-cp index.md /www
