@@ -1,0 +1,17 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - source
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: jayanthkoushik/paje@v1
+      with:
+        setupscript: sh build.sh
+        targetbranch: master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
