@@ -18,5 +18,26 @@
   other-authors: ['Aria Y. Wang', 'Michael J. Tarr', 'Leila Wehbe']
   status: 'Poster presented at Society for Neuroscience (SfN) 2019'
 
+- title: 'Neural Taskonomy: Inferring the Similarity of Task-Derived Representations from Brain Activity'
+  # equal-authors: ['Aria Y. Wang']
+  other-authors: ['Aria Y. Wang', 'Leila Wehbe', 'Michael J. Tarr']
+  status: 'Poster presented at Conference on Neural Information Processing Systems (NeurIPS) 2019'
+
+- title: 'Joint Interpretation of Representations in Neural Network and the Brain'
+  equal-authors: ['<u>Aria Y. Wang</u>', Ruogu Lin] 
+  other-authors: ['Michael J. Tarr', 'Leila Wehbe']
+  status: 'Talk presented at the ICLR Workshop 2021 - "How Can Findings About The Brain Improve AI Systems?"'
+
+- title: 'Image Embeddings Informed by Natural Language Improve Predictions and Understanding of Human High-Level Visual Cortex'
+  other-authors: ['<u>Aria Y. Wang</u>', 'Michael J. Tarr', 'Leila Wehbe']
+  status: 'Talk presented at the 4th Neuromatch conference 2021'
+  links:
+    - youtube: https://www.youtube.com/watch?v=CnFX0EzKbXU
+
+- title: 'Image Embeddings Informed by Natural Language Improve Predictions and Understanding of Human High-Level Visual Cortex'
+  other-authors: ['<u>Aria Y. Wang</u>', 'Michael J. Tarr', 'Leila Wehbe']
+  status: 'Poster presented at Conference on Cognitive Computational Neuroscience (CCN) 2022'
+
+
   # links:
   #  - LINKNAME: 'LINK'
