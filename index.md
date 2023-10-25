@@ -26,6 +26,8 @@ nomath: true
     <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z" />
 </svg></a>
 
+<img src="_data/IMG_1103.jpg" style="height: 300px; width:250px;"/>
+
 I am currently a research scientist in the [Machine Learning Team](https://cmn.nimh.nih.gov/mlt) at NIH/NIMH, where I collaborate with experimentalists across a wide range of fields to build computational models to explain neural data. My primary research interest is driven by developing models to understand computations carried out the brain. I am particularly passionate about the future of integrating end-to-end task-driven learning on neural data with both behavioral and neuronal interventions, aiming to uncover specific mechanisms and objectives in neural processings.
 
 Prior to NIH, I received my joint PhD in [Neural Computation](http://compneuro.cmu.edu/) and [Machine Learning](https://www.ml.cmu.edu/) at Carnegie Mellon University, where I had the privilege of being advised by by [Mike Tarr](https://sites.google.com/andrew.cmu.edu/tarrlab/) and [Leila Wehbe](https://www.cs.cmu.edu/~lwehbe/). My PhD works have focused on modeling visual and semantic processing in the human brain, where I collected data using functional Magnetic Resonance Imaging (fMRI) and used models from computer vision and natural language processing to model brain responses of viewing natural images and movies. 
