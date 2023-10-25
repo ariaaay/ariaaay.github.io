@@ -7,7 +7,7 @@ description: Personal website of Aria Wang.
 nomath: true
 ---
 
-<a title="Email" class="icon-link" href="mailto:ariawang@cmu.edu"><svg>
+<a title="Email" class="icon-link" href="mailto:ariayuanwang@gmail.com"><svg>
     <!-- mail icon -->
     <path stroke="none" d="M0 0h24v24H0z"/>
     <rect x="3" y="5" width="18" height="14" rx="2" />
