@@ -7,3 +7,17 @@ a.icon-link {
     height: 24px;
   }
 }
+
+img.float-end {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  img.float-end {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+}
