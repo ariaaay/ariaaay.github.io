@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aria Wang · 王元</title>
+<meta name="description" content="Personal website of Aria Wang, research scientist in the Machine Learning Core at NIH/NIMH." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz@0,6..72;1,6..72&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #fafaf9;
+    --text: #1c1c1a;
+    --muted: #6b6b66;
+    --faint: #9a9a93;
+    --line: #e8e7e2;
+    --accent: #2f6f6a;
+    --accent-soft: #e6f0ef;
+    --maxw: 720px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 72px 28px 96px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 2px; }
+
+  /* Header */
+  header.intro {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+  .intro-text { flex: 1; min-width: 0; }
+  h1 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+  }
+  .role { color: var(--muted); font-size: 17px; margin: 0 0 18px; }
+  .role a { color: var(--muted); border-bottom: 1px solid var(--line); }
+  .role a:hover { color: var(--accent); text-decoration: none; }
+  .photo {
+    width: 150px;
+    height: 188px;
+    object-fit: cover;
+    border-radius: 14px;
+    flex-shrink: 0;
+    filter: saturate(1.02);
+  }
+
+  /* Social icons */
+  .social { display: flex; gap: 14px; margin: 0 0 4px; }
+  .social a {
+    display: inline-flex;
+    width: 38px; height: 38px;
+    align-items: center; justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    color: var(--muted);
+    transition: all .15s ease;
+  }
+  .social a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    text-decoration: none;
+  }
+  .social svg { width: 19px; height: 19px; stroke: currentColor; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* About prose */
+  .about { margin-top: 28px; }
+  .about p { margin: 0 0 18px; }
+  .about p:last-child { margin-bottom: 0; }
+
+  /* Section headings */
+  section { margin-top: 56px; }
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* Publication / talk entries */
+  .entry { margin-bottom: 26px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry .title { font-weight: 500; line-height: 1.45; color: var(--text); }
+  .entry .authors { color: var(--muted); font-size: 15.5px; margin-top: 3px; }
+  .entry .authors .me { color: var(--text); font-weight: 500; border-bottom: 1.5px solid var(--accent); }
+  .entry .venue { color: var(--faint); font-size: 15px; font-style: italic; margin-top: 2px; }
+  .entry .links { margin-top: 7px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .entry .links a {
+    font-size: 13px;
+    padding: 2px 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    transition: all .15s ease;
+  }
+  .entry .links a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    text-decoration: none;
+  }
+  .star { color: var(--faint); font-size: 13px; margin-top: 18px; }
+
+  footer {
+    margin-top: 72px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--faint);
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    .wrap { padding: 48px 22px 72px; }
+    header.intro { flex-direction: column-reverse; gap: 22px; align-items: flex-start; }
+    .photo { width: 132px; height: 165px; }
+    h1 { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="intro">
+    <div class="intro-text">
+      <h1>Aria Wang <span style="color:var(--faint);font-weight:400;">· 王元</span></h1>
+      <p class="role">Research Scientist · <a href="https://cmn.nimh.nih.gov/mlt">Machine Learning Core</a>, NIH/NIMH</p>
+      <nav class="social">
+        <a href="mailto:ariayuanwang@gmail.com" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
+        </a>
+        <a href="https://www.github.com/ariaaay" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0-1.333-3.21 4.192 4.192 0 0 0-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0-6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0-.08 3.227A4.566 4.566 0 0 0 4 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21"/></svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=MepHbYgAAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar">
+          <svg viewBox="0 0 24 24"><path d="M17.788 5.108A9 9 0 1 0 21 12h-8"/></svg>
+        </a>
+        <a href="https://twitter.com/ariairaw" title="Twitter" aria-label="Twitter">
+          <svg viewBox="0 0 24 24"><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg>
+        </a>
+      </nav>
+    </div>
+    <img class="photo" src="figs/IMG_1103.jpg" alt="Aria Wang" />
+  </header>
+
+  <div class="about">
+    <p>I am a research scientist in the <a href="https://cmn.nimh.nih.gov/mlt">Machine Learning Core</a> at NIH/NIMH, where I collaborate with experimentalists across a wide range of fields to build computational models that explain neural data. My goal is to answer questions such as &ldquo;what are the objective functions of the brain?&rdquo; and &ldquo;how are they implemented?&rdquo; through building end-to-end task-driven models that allow for behavioral and neuronal interventions.</p>
+    <p>Prior to NIH, I received my joint PhD in <a href="http://compneuro.cmu.edu/">Neural Computation</a> and <a href="https://www.ml.cmu.edu/">Machine Learning</a> at Carnegie Mellon University, where I had the privilege of being advised by <a href="https://sites.google.com/andrew.cmu.edu/tarrlab/">Mike Tarr</a> and <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a>. My PhD work focused on modeling visual and semantic processing in the human brain: I collected fMRI data and used models from computer vision and natural language processing to predict and explain brain responses to natural images and movies.</p>
+    <p>Before CMU, I received a B.A. in Statistics and Cognitive Science from UC Berkeley.</p>
+    <p>Outside of research, I enjoy bouldering, mountaineering, cooking, and reading.</p>
+  </div>
+
+  <section>
+    <h2>Publications &amp; Preprints</h2>
+
+    <div class="entry">
+      <div class="title">Joint Natural Language and Image Pre-training Builds Better Models of Human Higher Visual Cortex</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Kendrick Kay, Thomas Naselaris, Michael J. Tarr, Leila Wehbe</div>
+      <div class="venue">Nature Machine Intelligence, 2023</div>
+      <div class="links">
+        <a href="https://www.biorxiv.org/content/biorxiv/early/2022/09/29/2022.09.27.508760.full.pdf">Paper</a>
+        <a href="pdf/CLIPPoster.pdf">Poster</a>
+        <a href="https://www.youtube.com/watch?v=CnFX0EzKbXU">Talk</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Selectivity for Food in Human Ventral Visual Cortex</div>
+      <div class="authors">Nidhi Jain, <span class="me">Aria Y. Wang</span>, Margaret M. Henderson, Ruogu Lin, Jacob S. Prince, Michael J. Tarr, Leila Wehbe</div>
+      <div class="venue">Communications Biology, 2023</div>
+      <div class="links">
+        <a href="https://www.nature.com/articles/s42003-023-04546-2">Paper</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Joint Interpretation of Representations in Neural Network and the Brain</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span><sup>&ast;</sup>, Ruogu Lin<sup>&ast;</sup>, Michael J. Tarr, Leila Wehbe</div>
+      <div class="venue">ICLR Workshop 2021 — How Can Findings About The Brain Improve AI Systems?</div>
+      <div class="links">
+        <a href="pdf/JointInterpretationPaper.pdf">Paper</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Neural Taskonomy: Inferring the Similarity of Task-Derived Representations from Brain Activity</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Michael J. Tarr, Leila Wehbe</div>
+      <div class="venue">Neural Information Processing Systems (NeurIPS) 2019</div>
+      <div class="links">
+        <a href="http://www.cs.cmu.edu/~neural-taskonomy/src/paper.pdf">Paper</a>
+        <a href="pdf/TaskonomyPoster.pdf">Poster</a>
+        <a href="http://www.cs.cmu.edu/~neural-taskonomy/">Website</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Learning Intermediate Features of Object Affordances with a Convolutional Neural Network</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Michael J. Tarr</div>
+      <div class="venue">Conference on Cognitive Computational Neuroscience (CCN) 2018</div>
+      <div class="links">
+        <a href="https://arxiv.org/pdf/2002.08975.pdf">Paper</a>
+      </div>
+    </div>
+
+    <div class="star"><sup>&ast;</sup> Equal contribution</div>
+  </section>
+
+  <section>
+    <h2>Conference &amp; Workshop Presentations</h2>
+
+    <div class="entry">
+      <div class="title">Image Embeddings Informed by Natural Language Improve Predictions and Understanding of Human High-Level Visual Cortex</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Michael J. Tarr, Leila Wehbe</div>
+      <div class="venue">Poster — Cognitive Computational Neuroscience (CCN) 2022</div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Image Embeddings Informed by Natural Language Improve Predictions and Understanding of Human High-Level Visual Cortex</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Michael J. Tarr, Leila Wehbe</div>
+      <div class="venue">Talk — 4th Neuromatch Conference 2021</div>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=CnFX0EzKbXU">YouTube</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Joint Interpretation of Representations in Neural Network and the Brain</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span><sup>&ast;</sup>, Ruogu Lin<sup>&ast;</sup>, Michael J. Tarr, Leila Wehbe</div>
+      <div class="venue">Talk — ICLR Workshop 2021</div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Neural Taskonomy: Inferring the Similarity of Task-Derived Representations from Brain Activity</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Leila Wehbe, Michael J. Tarr</div>
+      <div class="venue">Poster — Neural Information Processing Systems (NeurIPS) 2019</div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Expanding Visual Feature Spaces towards a General Encoding Model of Scene Perception</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Michael J. Tarr, Leila Wehbe</div>
+      <div class="venue">Poster — Society for Neuroscience (SfN) 2019</div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Neural Taskonomy: Inferring the Similarity of Task-Derived Representations from Brain Activity</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Leila Wehbe, Michael J. Tarr</div>
+      <div class="venue">Poster — Algonauts Workshop, MIT 2019</div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Learning Intermediate Features of Affordances with a Convolutional Neural Network</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Michael J. Tarr</div>
+      <div class="venue">Poster — Cognitive Computational Neuroscience (CCN) 2018</div>
+    </div>
+
+    <div class="entry">
+      <div class="title">Learning Intermediate Features of Affordances with a Convolutional Neural Network</div>
+      <div class="authors"><span class="me">Aria Y. Wang</span>, Michael J. Tarr</div>
+      <div class="venue">Poster — Vision Science Society (VSS) 2018</div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="yr"></span> Aria Wang · <a href="https://www.github.com/ariaaay">github.com/ariaaay</a>
+  </footer>
+
+</div>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
