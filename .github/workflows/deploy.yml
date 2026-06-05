@@ -1,17 +1,25 @@
+name: Deploy
+
 on:
   workflow_dispatch:
   push:
     branches:
     - source
 
+permissions:
+  contents: write
+
 jobs:
-  main:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: jayanthkoushik/paje@v1
+    - uses: actions/checkout@v4
+    - name: Build static site
+      run: sh build.sh
+    - name: Publish to master
+      uses: peaceiris/actions-gh-pages@v4
       with:
-        setupscript: sh build.sh
-        targetbranch: master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: master
+        publish_dir: ./_site
+        cname: ariaywang.com
