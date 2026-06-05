@@ -1,6 +1,11 @@
-cp CNAME /www
-cp index.md /www
-cp -r pdf /www
-cp -r _data /www
-cp -r _includes/* /www/_includes/
-cp -r figs /www
+#!/bin/sh
+# Assemble the static site into ./_site for deployment.
+set -e
+
+rm -rf _site
+mkdir -p _site
+
+cp index.html _site/
+cp CNAME _site/
+cp -r figs _site/
+cp -r pdf _site/
